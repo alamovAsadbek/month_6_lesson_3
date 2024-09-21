@@ -2,4 +2,5 @@ from django.db import models
 
 
 class AuthorModel(models.Model):
-    pass
+    name = models.CharField(max_length=50)
+    description = models.TextField()
