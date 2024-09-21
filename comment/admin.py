@@ -1,6 +1,11 @@
 from django.contrib import admin
+from django.contrib.auth.models import Group
 
 from comment.models import CommentModel
+
+admin.site.site_header = 'Book Review Admin'
+
+admin.site.unregister(Group)
 
 
 @admin.register(CommentModel)
