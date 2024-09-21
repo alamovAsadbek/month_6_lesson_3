@@ -5,6 +5,7 @@ from author.models import AuthorModel
 admin.site.register(AuthorModel)
 
 
+@admin.register(AuthorModel)
 class AuthorAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'phone', 'created_at', 'updated_at')
     link_display = ('name', 'email', 'phone', 'created_at', 'updated_at')
