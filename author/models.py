@@ -21,3 +21,7 @@ class AuthorModel(models.Model):
     # Returns the author's name when the object is printed
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name_plural = "Authors"
+        verbose_name = "Author"
